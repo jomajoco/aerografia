@@ -1,2 +1,164 @@
-aerografia {
-    display: none;
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+header{
+    background: url(../images/fondo1.jpg) no-repeat top left;
+    background-size: cover;
+}
+#logos{
+    background: #1c3661;
+    display: grid;
+    grid-template-rows: 80px;
+    grid-template-columns: 50% 50%;
+    
+}
+#logos img{
+    max-height: 60px;
+    padding-top: 10px;
+}
+#logos img[alt="Academia Artcom"]{
+    justify-self: end;
+    text-align: right;
+}
+#aerografia{
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+h1{
+    font-size: 100px;
+    line-height: 0.7em;
+    margin-bottom: 30px;
+}
+h1 span{
+    font-size: 80px;
+}
+button{
+    background-image: linear-gradient(to right, #fdcf34, #fdcd33, #fdcb33, #fcc932, #fcc732, #fcc631, #fbc431, #fbc330, #fbc130, #fbbf2f, #fabd2f, #fabb2f);
+    border: 0;
+    padding: 5px 1em;
+    color: white;
+    border-radius: 8px;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 5px #00000080;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px #00000080;
+    margin-bottom: 50px;
+}
+#Descripcion{
+    text-align: center;
+    margin: 0px 40px 40px 40px;
+}
+#Descripcion img{
+    width: 50%;
+    margin-top: 25px;
+}
+#Testimonios{
+    text-align: center;
+    margin: 0px 40px 40px 40px;
+}
+#Testimonios img{
+    width: 50%;
+    margin-top: 25px;
+}
+#footer{
+    background: #1c3661;
+    text-align: center;
+    color: white;
+    padding: 20px;
+   
+}
+#footer img{
+    max-height: 30px;
+    padding-top: 10px;
+}
+#beneficios{
+    text-align: center;
+    background-image: linear-gradient(to right, #0083c7, #0084c8, #0085c8, #0185c9, #0186c9, #008acc, #008dcf, #0091d2, #0099d7, #00a1dc, #05a8e1, #10b0e6);
+    color: white;
+    display: grid;
+    grid-template: 80px auto auto / 50% 50%;
+    padding: 25px 15px;
+}
+#beneficios img{
+    max-height: 60px;
+    padding-top: 10px;  
+}
+#beneficios h2{
+    grid-column: 1/3;
+}
+#info{
+    text-align: center;
+    background-image: linear-gradient(to right, #0083c7, #0084c8, #0085c8, #0185c9, #0186c9, #008acc, #008dcf, #0091d2, #0099d7, #00a1dc, #05a8e1, #10b0e6);
+    color: white;
+    padding: 20px;
+}
+#info button{
+    margin: 30px;
+}
+#trabajos{
+    text-align: center;
+}
+form{
+    width: 100%;
+}
+input{
+    width: 90%;
+    border: 0;
+    padding: .5em 1em;
+    margin-bottom: .8em;
+    border-radius: 8px;
+    background: #ffffff95;
+    color: white;
+    
+}
+@media screen and (min-width: 768px) {
+
+	/*aqui inician los estilos de tablet*/
+	#Descripcion img{
+    width: 90%;
+    margin-top: 25px;
+}
+    #Experiencia img{
+    width: 90%;
+}
+    #beneficios{
+    grid-template: 80px 1fr / 25% 25% 25% 25%;
+}
+    #beneficios h2{
+    grid-column: 1/5;
+}
+    #Instructor, .testimonio{
+    display: grid;
+    text-align: center;
+    margin-top: 40px;
+    grid-template: 1fr / 70% 30%;
+}
+    .testimonio{
+    grid-template: 1fr / 30% 70%;
+}
+    #Instructor img{
+    order: 1;
+    margin: 0px;     
+}
+    #Instructor > p, .testimonio > div{
+    align-self: center;
+}
+	/*aqui terminan los estilos de tablet*/
+}
+@media screen and (min-width: 1024px) {
+
+	/*aqui inician los estilos de laptop*/
+    #Descripcion img{
+    width: 70%;
+    margin: 0px 0px 0px 70px
+}
+    #Experiencia img{
+    width: 70%;
+    margin: 0px 0px 0px 70px;
+}
+    
+	/*aqui terminan los estilos de laptop*/
+}
