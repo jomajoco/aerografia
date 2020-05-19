@@ -46,6 +46,8 @@ button{
     font-weight: 700;
     text-shadow: 1px 1px 3px #00000080;
     margin-bottom: 50px;
+    width: 30%;
+    height: 40px;
 }
 #Descripcion{
     text-align: center;
@@ -105,9 +107,9 @@ form{
     width: 100%;
 }
 input{
-    width: 90%;
+    width: 80%;
     border: 0;
-    padding: .5em 1em;
+    padding: .8em 1em;
     margin-bottom: .8em;
     border-radius: 8px;
     background: #ffffff95;
@@ -146,6 +148,31 @@ input{
     #Instructor > p, .testimonio > div{
     align-self: center;
 }
+button{
+    background-image: linear-gradient(to right, #fdcf34, #fdcd33, #fdcb33, #fcc932, #fcc732, #fcc631, #fbc431, #fbc330, #fbc130, #fbbf2f, #fabd2f, #fabb2f);
+    border: 0;
+    padding: 5px 1em;
+    color: white;
+    border-radius: 8px;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 5px #00000080;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px #00000080;
+    margin-bottom: 50px;
+    width: 20%;
+    height: 40px;
+}
+input{
+    width: 60%;
+    border: 0;
+    padding: .8em 1em;
+    margin-bottom: .8em;
+    border-radius: 8px;
+    background: #ffffff95;
+    color: white;
+}
+#Descripcion{
+    width: 90%;
 	/*aqui terminan los estilos de tablet*/
 }
 @media screen and (min-width: 1024px) {
@@ -153,12 +180,30 @@ input{
 	/*aqui inician los estilos de laptop*/
     #Descripcion img{
     width: 70%;
-    margin: 0px 0px 0px 70px
+    margin: 0px 0px 0px 20px
 }
     #Experiencia img{
-    width: 70%;
+    width: 75%;
     margin: 0px 0px 0px 70px;
 }
-    
+input{
+    width: 50%;
+    border: 0;
+    padding: .8em 1em;
+    margin-bottom: .8em;
+    border-radius: 8px;
+    background: #ffffff95;
+    color: white;
+}
+#Descripcion{
+    width: 80%;
+    margin: 0% 0% 4% 12%
+}
+#Experiencia{
+    width: 80%;
+    margin: 1% 0% 0% 7%
+}	/*aqui terminan los estilos de tablet*/
+}
+
 	/*aqui terminan los estilos de laptop*/
 }
